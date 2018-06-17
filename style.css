@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rufina', serif;
+}
+
+
+
+.section{
+    padding: 60px 150px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.style_buts{
+    color: #ffffff;
+    font-size: 18px;
+
+    background-color: transparent;
+
+    padding: 15px 45px;
+    margin: 0px 14px;
+
+    outline: none;
+}
+
+
+.but_black{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: #000000;
+}
+
+
+.but_white{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+}
+
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+.content_decoration{
+    width: 40%;
+    padding: 5px 0px;
+}
+
+
+.content{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+.content_title{
+    color: #cc9900;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+.white_color_text{
+    color: #ffffff !important;
+}
+
+
+
+.content_text{
+    text-align: center;
+    padding: 10px 5px;
+}
+
+
+
+
+.input_style{
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+
+    padding: 7px 10px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: 1px solid #c8c6c6;
+
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+
+.input_style:focus{
+    border-color: #c9a131;
+}
+
+
+select{
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.option_default_value{
+    color: #7c7c7c;
+}
+
+
+
+
+
+
+/*-------Header-------------*/
+
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 150px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6));
+    }
+
+    .logo{
+        color: #ffffff;
+        font-size: 35px;
+
+        justify-self: flex-start;
+        margin-right: auto;
+    }
+
+
+    .navigation{
+        display: flex;
+    }
+
+    .element-navigation{
+        font-size: 20px;
+        color: #ffffff;
+
+        padding: 30px 15px 5px 15px;
+    }
+
+
+    .checked-element-navigation{
+        position: relative;
+    }
+
+
+    .checked-element-navigation::before{
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .social-icons{
+        display: flex;
+    }
+
+
+    .element-social-icons{
+        color: #dab33e;
+        font-size: 20px;
+
+        padding: 5px 10px;
+    }
+
+/*---------------------------*/
+
+
+
+
+
+
+/*-------Section Promo------*/
+
+    .promo{
+
+        background: url(images/section_promo/BG.png) no-repeat;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+
+        background-position: center top;
+
+        height: 750px;
+
+        display: flex;
+    }
+
+
+    .promo_content{
+        padding: 60px 140px 0px 140px;
+        box-sizing: border-box;
+
+        justify-self: center;
+        align-self: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .text_promo_content{
+        font-size: 90px;
+        color: #ffffff;
+    }
+
+
+    .decoration_promo_content{
+        width: 30%;
+        padding: 14px 0px;
+    }
+
+
+/*----------------------------*/
+
+
+
+
+
+/*--------Section About---------*/
+
+    .about{
+        min-height: 710px;
+
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.98),
+                rgba(221, 221, 221, 0.98)), url(images/section_about/BG.png);
+
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .container_about_content_img_cook{
+        padding: 60px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .about_content_img_cook{
+        width: 30%;
+        position: relative;
+    }
+
+    .img_cook{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .about_content_img_cook::after{
+        content: url(images/section_about/podpis_cook.png);
+        position: absolute;
+        width: 100%;
+        top: 75%;
+        left: 42%;
+    }
+
+
+    .about_container_dish{
+        width: 50%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .img_dish{
+        font-size: 0;
+        border-radius: 50%;
+        box-shadow: -10px 10px 10px rgb(0, 0, 0, 0.5);
+    }
+
+
+/*-------------------------------*/
+
+
+
+
+/*--------Section igredients-------*/
+
+
+    .igredients{
+
+        background: url(images/section_igredients/BG.png) no-repeat;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+
+        background-position: center top;
+
+        height: 750px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .igredients_content{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 60px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .container_images_igredients{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+
+    .border_elem_container_images_igredients{
+        width: 25%;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.1);
+    }
+
+
+    .border_elem_container_images_igredients:before {
+        content: "";
+        padding-top: 100%;
+        float: left;
+    }
+
+
+
+    .elem_container_images_igredients{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+
+
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+
+        background-position: center center;
+    }
+
+
+
+    .img_igredients1{
+        background: url(images/section_igredients/img_igredients1.png) no-repeat;
+    }
+
+
+    .img_igredients2{
+        background: url(images/section_igredients/img_igredients2.png) no-repeat;
+    }
+
+
+    .img_igredients3{
+        background: url(images/section_igredients/img_igredients3.png) no-repeat;
+    }
+
+
+/*----------------------------------*/
+
+
+
+
+/*--------Section menu food--------------*/
+
+    .menu_food{
+        min-height: 710px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+
+        background: linear-gradient(to bottom right,
+                rgba(221, 221, 221, 0.98), rgba(255, 255, 255, 0.98)), url(images/section_menu/BG.png);
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .content_menu_food{
+        padding: 25px 60px;
+        box-sizing: border-box;
+    }
+
+
+    .category_menu_food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        padding: 25px 0px;
+    }
+
+
+    .list_this_category_menu_food{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .elem_list_this_category_menu_food{
+        border: 1px solid transparent;
+        padding: 0px 10px;
+        margin: 18px 0px;
+    }
+
+
+    .special_element{
+        border-color: #c89f2d;
+        position: relative;
+    }
+
+
+    .special_element::before{
+        content: 'Special';
+        position: absolute;
+        color: #ffffff;
+        padding: 3px 10px;
+        bottom: 100%;
+        right: 0;
+        margin-right: -1px;
+        background-color: #c89f2d;
+    }
+
+
+    .name_and_price_this_elem{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        color: #c89f2d;
+        padding: 10px 0px;
+        border-bottom: 1px solid #c89f2d;
+    }
+
+
+    .desc_this_elem{
+        padding: 10px 0px;
+    }
+
+/*-------------------------------*/
+
+
+
+/*--------Section reviews---------------*/
+    .reviews{
+        background: url(images/section_reviews/BG.png) no-repeat;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+
+        background-position: center center;
+
+        min-height: 750px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content_reviews{
+        width: 60%;
+        box-sizing: border-box;
+        padding: 60px;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .title_reviews{
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .text_reviews{
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 5px;
+
+        position: relative;
+    }
+
+    .text_reviews::before{
+        content: '"';
+        position: absolute;
+        color: #ffffff;
+        font-size: 50px;
+        top: 0;
+        transform: translate(0px, -20px);
+        right: 100%;
+    }
+
+
+    .place_reviews{
+        color: #ffffff;
+        text-align: center;
+        padding: 30px 5px 10px 5px;
+    }
+
+/*---------------------------------*/
+
+
+
+
+/*----------Section reservations---------*/
+
+    .reservations{
+        min-height: 710px;
+
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.98),
+                rgba(221, 221, 221, 0.98)), url(images/section_about/BG.png);
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .all_contant_reservations{
+        display: flex;
+        align-items: stretch;
+    }
+
+
+    .imgs_reservations{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .container_img_reservations{
+        width: 47%;
+        height: 100%;
+        overflow: hidden;
+
+
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+
+        background-position: center center;
+    }
+
+
+    .img_reservations1{
+        background: url(images/section_reservations/img1.png) no-repeat;
+    }
+
+
+    .img_reservations2{
+        background: url(images/section_reservations/img2.png) no-repeat;
+    }
+
+
+
+    .list_inputs_booking_form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .elem_booking_form{
+        width: 47%;
+        padding: 15px 0px;
+    }
+
+
+    .name_elem_booking_form{
+        padding: 3px 0px;
+        color: #c9a131;
+    }
+
+
+    .container_but_booking_form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        padding-top: 20px;
+    }
+
+
+    .but_booking_form{
+        background-color: #c9a131;
+        border-color: #c9a131;
+
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 0;
+    }
+
+    .content_reservations{
+        padding: 10px 60px;
+    }
+
+    .content_reservations .content_title{
+        padding-top: 0;
+    }
+
+
+/*------------------------------------*/
+
+
+
+
+/*--------Footer-------------*/
+    .footer{
+        background-color: #191919;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .elem_footer{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_elem_footer{
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+
+
+    .list_icon_in_footer{
+        justify-self: flex-end;
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+    }
+
+    .div_icon_in_footer{
+        padding: 2px 5px;
+        color: #ffffff;
+    }
+
+/*-----------------------------*/
